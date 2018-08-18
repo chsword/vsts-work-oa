@@ -1,0 +1,25 @@
+{
+  "name": "vsts-work-oa",
+  "version": "1.0.2",
+  "description": "vsts work item extension",
+  "main": "index.js",
+  "scripts": {
+    "build":"tsc | tfx extension create --rev-version",
+    "init":"npm i -g typescript",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chsword/vsts-work-oa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chsword/vsts-work-oa/issues"
+  },
+  "homepage": "https://github.com/chsword/vsts-work-oa#readme",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.134.0"
+  }
+}

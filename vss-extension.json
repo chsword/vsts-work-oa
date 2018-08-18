@@ -1,0 +1,49 @@
+{
+    "manifestVersion": 1,
+    "id": "work-oa",
+    "publisher": "zoujian",
+    "version": "1.0.10",
+    "name": "Work-OA",
+    "description": "A work item extension for vsts",
+    "public": true,
+    "categories": ["Plan and track"],
+    "targets": [{
+        "id": "Microsoft.VisualStudio.Services"
+    }],
+    "scopes": [
+        "vso.work",
+        "vso.project"
+    ],
+    "contributions": [{
+        "id": "work-oa",
+        "type": "ms.vss-web.hub",
+        "targets": [
+            "ms.vss-work-web.work-hub-group"
+        ],
+        "properties": {
+            "name": "Work statistics",
+            "uri": "work-oa.html",
+            "order": 99
+        }
+    }],
+    "files": [
+        {
+            "path": "content",
+            "addressable": true
+        },
+        {
+            "path": "work-oa.html",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        },
+        {
+            "path": "dist",
+            "addressable": true,
+            "packagePath": "scripts"
+        }
+    ]
+}
