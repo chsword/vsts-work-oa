@@ -1,25 +1,33 @@
 {
   "name": "vsts-work-oa",
   "version": "1.0.2",
-  "description": "vsts work item extension",
-  "main": "index.js",
   "scripts": {
-    "build":"tsc | tfx extension create --rev-version",
-    "init":"npm i -g typescript",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "clean": "powershell.exe rm *.vsix -force",
+    "publish": "tsc | tfx extension create --rev-version",
+    "init": "npm i -g typescript"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chsword/vsts-work-oa.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chsword/vsts-work-oa/issues"
-  },
-  "homepage": "https://github.com/chsword/vsts-work-oa#readme",
   "dependencies": {
-    "vss-web-extension-sdk": "^5.134.0"
-  }
+    "vss-web-extension-sdk": "^5.134.0",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-plugin-typescript": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "@vue/eslint-config-standard": "^3.0.1",
+    "@vue/eslint-config-typescript": "^3.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "private": true
 }
