@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "work-oa",
     "publisher": "zoujian",
-    "version": "1.0.11",
+    "version": "1.0.19",
     "name": "Work-OA",
     "description": "A work item extension for vsts",
     "public": true,
@@ -22,7 +22,7 @@
         ],
         "properties": {
             "name": "Work statistics",
-            "uri": "work-oa.html",
+            "uri": "dist/index.html",
             "order": 99
         }
     }],
@@ -32,18 +32,13 @@
             "addressable": true
         },
         {
-            "path": "work-oa.html",
-            "addressable": true
-        },
-        {
             "path": "node_modules/vss-web-extension-sdk/lib",
             "addressable": true,
             "packagePath": "lib"
         },
         {
             "path": "dist",
-            "addressable": true,
-            "packagePath": "scripts"
+            "addressable": true
         }
     ]
 }

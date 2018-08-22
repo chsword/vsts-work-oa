@@ -5,6 +5,7 @@
 
 package-lock.json
 *.vsix
+dist/
 # User-specific files
 *.suo
 *.user

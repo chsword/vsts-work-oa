@@ -5,8 +5,18 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+
+VSS.init({
+  explicitNotifyLoaded: true,
+  usePlatformScripts: true,
+  usePlatformStyles: true,
+
+});
+VSS.ready(function () {
+  new Vue({
+    router,
+    store,
+    render: h => h(App)
+  }).$mount('#app')
+  VSS.notifyLoadSucceeded();
+});

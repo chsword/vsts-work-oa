@@ -6,7 +6,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "clean": "powershell.exe rm *.vsix -force",
-    "publish": "tsc | tfx extension create --rev-version",
+    "publish": "tfx extension create --rev-version",
     "init": "npm i -g typescript"
   },
   "dependencies": {
