@@ -11,7 +11,6 @@
         "sourceMap": true,
         "baseUrl": ".",
         "types": [
-            "vue-typescript-import-dts",
             "vss-web-extension-sdk",
             "q",
             "jquery"

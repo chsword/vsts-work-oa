@@ -10,6 +10,7 @@
     "init": "npm i -g typescript"
   },
   "dependencies": {
+    "element-ui": "^2.4.6",
     "vss-web-extension-sdk": "^5.134.0",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
